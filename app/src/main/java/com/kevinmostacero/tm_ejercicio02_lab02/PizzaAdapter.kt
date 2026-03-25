@@ -24,4 +24,19 @@ class PizzaAdapter(
     override fun getItemId(position: Int): Long {
         return position.toLong()
     }
+
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+        val vista: View = convertView ?: LayoutInflater.from(context)
+            .inflate(R.layout.item_pizza, parent, false)
+
+        val imgPizza = vista.findViewById<ImageView>(R.id.imgPizza)
+        val txtPizza = vista.findViewById<TextView>(R.id.txtPizza)
+
+        val pizza = listaPizzas[position]
+
+        imgPizza.setImageResource(pizza.imagen)
+        txtPizza.text = pizza.nombre
+
+        return vista
+    }
 }
