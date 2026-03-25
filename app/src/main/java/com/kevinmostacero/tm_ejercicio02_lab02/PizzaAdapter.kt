@@ -13,4 +13,15 @@ class PizzaAdapter(
     private val listaPizzas: List<Pizza>
 ) : BaseAdapter() {
 
+    override fun getCount(): Int {
+        return listaPizzas.size
+    }
+
+    override fun getItem(position: Int): Any {
+        return listaPizzas[position]
+    }
+
+    override fun getItemId(position: Int): Long {
+        return position.toLong()
+    }
 }
