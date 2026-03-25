@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             Pizza("Pepperoni", R.drawable.pizza_pepperoni),
             Pizza("Americana", R.drawable.pizza_americana),
             Pizza("Vegetariana", R.drawable.pizza_vegetariana),
-            Pizza("Cuatro Quesos", R.drawable.pizza_cuatro_quesos),
+            Pizza("Cuatro Quesos", R.drawable.pizza_cuatroquesos),
             Pizza("Suprema", R.drawable.pizza_suprema)
         )
 
